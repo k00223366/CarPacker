@@ -209,7 +209,8 @@ $(function() {
 
     Quagga.onDetected(function(result) {
         var code = result.codeResult.code;
-
+        /*document.getElementById("demo").innerHTML = "onDetected"+code;*/
+        window.alert("onDetected: "+code);
         if (App.lastResult !== code) {
             App.lastResult = code;
             var $node = null, canvas = Quagga.canvas.dom.image;
